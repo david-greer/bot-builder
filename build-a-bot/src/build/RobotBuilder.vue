@@ -100,7 +100,7 @@ export default {
       selectedBaseIndex: 0,
     };
   },
-  mixins: [createdHookMixin];
+  mixins: [createdHookMixin],
   computed: {
     saleBorderClass() {
       return this.selectedRobot.head.onSale ? 'sale-border' : '';
