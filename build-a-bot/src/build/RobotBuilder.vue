@@ -5,6 +5,7 @@
         <div class="robot-name">
 
           {{selectedRobot.head.title}}
+          <span v-if="selectedRobot.head.onSale" class="sale">Sale!</span>
 
         </div>
         <!-- Show v-bind and v-on shorthand syntax -->
@@ -73,8 +74,8 @@ export default {
         torso: availableParts.torsos[this.selectedTorsoIndex],
         rightArm: availableParts.arms[this.selectedRightArmIndex],
         base: availableParts.bases[this.selectedBaseIndex],
-      }
-    }
+      };
+    },
   },
   methods: {
     selectNextHead() {
@@ -235,5 +236,8 @@ export default {
   top: -25px;
   text-align: center;
   width: 100%;
+}
+.sale {
+  color: red;
 }
 </style>
