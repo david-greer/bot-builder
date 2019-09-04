@@ -28,6 +28,16 @@
 
           </li>
 
+          <li class="nav-item">
+
+            <router-link class="nav-link" :to="{name: 'BrowseParts'}">
+
+              Browse Parts
+
+          </router-link>
+
+          </li>
+
         </ul>
 
       </nav>
