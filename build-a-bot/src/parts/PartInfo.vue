@@ -13,10 +13,10 @@ import parts from '../data/parts';
 export default {
   name: 'PartInfo',
   props: {
-    partType: {type: String},
+    partType: { type: String },
     id: {
       type: [Number, String],
-      validator: function(value) {
+      validator(value) {
         return Number.isInteger(Number(value));
       },
     },
